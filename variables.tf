@@ -3,6 +3,16 @@ variable "project_id" {
   default = "playground-s-11-f1e6f897"
 }
 
+variable "vpc_name" {
+  type = string
+  default = "terraform"
+}
+
+variable "mtu" {
+  type = number
+  default = 1460
+}
+
 variable "subnet_name_list" {
   type  = list
   default = ["us-central1","us-west1","us-west2","us-east1"]
