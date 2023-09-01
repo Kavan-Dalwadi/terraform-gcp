@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "playground-s-11-6c48b791",
+    "private_key_id": "073f5ac36f277f84d496cba5f4ea02947d4d7dba",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCpoaxZxrI0yZJ/\nyygys4bsvIjLp9/VkULeT6s/iagOhSGfIvP+BQb3mwUSp+nTk4WmxUE3RWoT+PuH\noCCwQKYT0cZ3T1RYUKLvm69gGB1INPdN/DgIcbNKZYuOKHM/FJckg+7iozwS6nkE\na8nIIrY4JoOEnK3eB+1Zvzm6rlx2Wb/xxW7n86BepaUJrD13986s0gIio14ZiaXm\nPWDWZ1WKeB13lM0UjlsVDsWEr5p+N+0MIxITJFX9FH49zdf0+QJPj7Qt7X2EQ/nS\nxbKNMhwWFdH+zq28/FcQoV5a3ydxq2mkFdLz+WBW6xT0rS76FgQzN4+R4U6gWLSw\nhzy9KNalAgMBAAECggEAJc12yEcEfckSEdKnca0ae3WEksYllsWZfkuI4U7/GcVH\nedxjPY/HPrTYS5EKBfGRTloVL4kTm8HX5CCmSEEQAci1Du+p30iRFw695Y9aLzZG\niqWToyYbi4/XquWO0Vb4W9XfDbjM8XY5Y+fVfvllXFwQ4SO9h4aCuYZpChZDWshG\nZT038RlH4j61ZjMxDziLOdeVEA4oCdnIcunPaeNLTb3MrgmvVGskTlIYTusn97wZ\nYsMQBiROR1RTrHMkzrTwQoEkGGCrNjZvFT7Jqplf4AreDXT/iZcawXNhwPDakreq\nK/N2VhN+EmqyH7n9xq5IV5ryrGfeprd4w4bxbGU3oQKBgQDfz8lawOPClfhPmuLU\ndNFe0iMP8uoz9WE4PLxr+TBDTu2YpUm30nch+Chzsf73bA3wT0UBs03C8oSOIUej\nXrB0BKJX8XTee/1//VOTkKdQ62nhwsDxDmtarvcJdxltyjusG4+Av+l6elTSqNg6\n8LXf0yrejv/nVY46eKDScKFlGQKBgQDCBxpmP9NS9/C8bim0sSj0Aqst2+HCJWNV\n5i6V5sFvkeInFVCdktFKTMwfFBjloKrezU0S9wfxrsGYa+mw89qIGPJ30Qtx6q0i\nNzh44c+VavPEeniJZsbljMzJ3hmfuEJqDZIK3xsPkB2D07D1f0l6SHgQiLL4XPcu\n/LZaiP2DbQKBgQCDqd9Qbk0Oud78JafvSFGrMH/D8ClrK51n0gMemdeUoSgRNptp\ncnz3FN/nP/04XO7OQjPcTjkeyEDGxDk6mIfBmMBQcBFKmTKGSucR1nU3m2YMk9+h\nb9Qj4u4dOV1SQzhbhVMkcMHPdYvU6dNaySSVacq8Zu+QjbpAF5q0ceHgcQKBgCU8\nObu/qe11OZTfy08q5IIXdQRi+ytIA407lFseIqcnpu/7LjJfN5z7qfyY3cJLmB8T\n5SOrlrGx6OM4amuUEK8noniN/JVLBRjY4hSIuU6ibM+a9UDhIXByGebvoZk+Qjia\nDBncARR2gsOGv6INYGuANtJteXMiXCl/Q/uR6JztAoGBAJEzUA0+7GeGFjTNPnGZ\n9sDuQu8tMIX1gZ0NUQDVILaMQ562UifSuMMVSt6wRcIoL79Sf1CXX2QVLu4f+C22\nU2WEDiu3nracr6MrmCly37mmMUBtkhpzv94C/TIxHjxVQFbySiLTi0bFPSfPHV69\nfVkhbghVSjjbmtdj0kKE/eyH\n-----END PRIVATE KEY-----\n",
+    "client_email": "cli-service-account-1@playground-s-11-6c48b791.iam.gserviceaccount.com",
+    "client_id": "113993441796782162861",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cli-service-account-1%40playground-s-11-6c48b791.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
+  
