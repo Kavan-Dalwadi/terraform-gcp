@@ -13,15 +13,15 @@ provider "google" {
   region      = "us-central1"
 }
 
-import {
-    to = google_compute_network.default
-    id = "projects/playground-s-11-f1e6f897/global/networks/default"
-}
+# import {
+#     to = google_compute_network.default
+#     id = "projects/playground-s-11-f1e6f897/global/networks/default"
+# }
 
-import {
-    to = google_container_cluster.console-cluster
-    id = "projects/playground-s-11-f1e6f897/locations/us-central1/clusters/console-release-channel"
-}
+# import {
+#     to = google_container_cluster.console-cluster
+#     id = "projects/playground-s-11-f1e6f897/locations/us-central1/clusters/console-release-channel"
+# }
 
 module "vpc" {
   source = "./modules/VPC"
