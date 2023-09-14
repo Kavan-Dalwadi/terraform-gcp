@@ -28,9 +28,7 @@ resource "google_container_cluster" "primary" {
 
   ip_allocation_policy {
     cluster_ipv4_cidr_block       = "10.4.0.0/14"
-    cluster_secondary_range_name  = "gke-console-release-channel-pods-22b6a282"
     services_ipv4_cidr_block      = "10.8.0.0/20"
-    services_secondary_range_name = "gke-console-release-channel-services-22b6a282"
     stack_type                    = "IPV4"
     pod_cidr_overprovision_config {
       disabled = false
