@@ -31,3 +31,12 @@ module "vpc" {
   subnet_cidr_list = var.subnet_cidr_list
   subnet_name_list = var.subnet_name_list
 }
+
+module "iam" {
+  source = "./modules/IAM"
+}
+
+module "gke" {
+  source = "./modules/GKE"
+  gke-sa = module.iam.gke-sa
+}

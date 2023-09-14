@@ -1,0 +1,1 @@
+variable "gke-sa" {}

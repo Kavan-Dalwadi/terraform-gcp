@@ -8,8 +8,6 @@ node_modules/
 dist/
 
 key.json
-key2.json
-
 
 **.tfstate*
 **.terraform**

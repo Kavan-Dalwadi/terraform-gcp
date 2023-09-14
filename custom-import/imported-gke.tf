@@ -76,11 +76,6 @@ resource "google_container_cluster" "console-cluster" {
   logging_config {
     enable_components = ["SYSTEM_COMPONENTS", "WORKLOADS"]
   }
-  master_auth {
-    client_certificate_config {
-      issue_client_certificate = false
-    }
-  }
   monitoring_config {
     enable_components = ["SYSTEM_COMPONENTS"]
     advanced_datapath_observability_config {
@@ -90,10 +85,6 @@ resource "google_container_cluster" "console-cluster" {
     managed_prometheus {
       enabled = true
     }
-  }
-  network_policy {
-    enabled  = false
-    provider = "PROVIDER_UNSPECIFIED"
   }
   node_config {
     boot_disk_kms_key = null
@@ -122,75 +113,13 @@ resource "google_container_cluster" "console-cluster" {
       enable_secure_boot          = false
     }
   }
-  node_pool {
-    initial_node_count = 1
-    max_pods_per_node  = 110
-    name               = "one"
-    name_prefix        = null
-    node_count         = 1
-    node_locations     = ["us-central1-a", "us-central1-c", "us-central1-f"]
-    version            = "1.27.3-gke.100"
-    autoscaling {
-      location_policy      = "BALANCED"
-      max_node_count       = 2
-      min_node_count       = 0
-      total_max_node_count = 0
-      total_min_node_count = 0
-    }
-    management {
-      auto_repair  = true
-      auto_upgrade = true
-    }
-    network_config {
-      create_pod_range     = false
-      enable_private_nodes = false
-      pod_ipv4_cidr_block  = "10.4.0.0/14"
-      pod_range            = "gke-console-release-channel-pods-22b6a282"
-    }
-    node_config {
-      boot_disk_kms_key = null
-      disk_size_gb      = 100
-      disk_type         = "pd-balanced"
-      guest_accelerator = []
-      image_type        = "COS_CONTAINERD"
-      labels            = {}
-      local_ssd_count   = 0
-      logging_variant   = "DEFAULT"
-      machine_type      = "e2-medium"
-      metadata = {
-        disable-legacy-endpoints = "true"
-      }
-      min_cpu_platform = null
-      node_group       = null
-      oauth_scopes     = ["https://www.googleapis.com/auth/devstorage.read_only", "https://www.googleapis.com/auth/logging.write", "https://www.googleapis.com/auth/monitoring", "https://www.googleapis.com/auth/service.management.readonly", "https://www.googleapis.com/auth/servicecontrol", "https://www.googleapis.com/auth/trace.append"]
-      preemptible      = false
-      resource_labels  = {}
-      service_account  = "default"
-      spot             = false
-      tags             = []
-      taint            = []
-      shielded_instance_config {
-        enable_integrity_monitoring = true
-        enable_secure_boot          = false
-      }
-    }
-    upgrade_settings {
-      max_surge       = 1
-      max_unavailable = 0
-      strategy        = "SURGE"
-    }
-  }
+  
   node_pool_defaults {
     node_config_defaults {
       logging_variant = "DEFAULT"
     }
   }
-  notification_config {
-    pubsub {
-      enabled = false
-      topic   = null
-    }
-  }
+
   private_cluster_config {
     enable_private_endpoint     = false
     enable_private_nodes        = false
@@ -209,11 +138,5 @@ resource "google_container_cluster" "console-cluster" {
   }
   service_external_ips_config {
     enabled = false
-  }
-  timeouts {
-    create = null
-    delete = null
-    read   = null
-    update = null
   }
 }
